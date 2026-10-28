@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "design9pum-gpuops_jd307"
+version = "0.1.0"
+description = "解析时间标记，排列GPU 集群运维工程师·长工具链的上下文回收的发生顺序，标出间隔异常与逆序事件"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "design9pum" }]
+keywords = ["analysis", "observability", "evaluation", "rag"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://design9pum.github.io"
+Repository = "https://github.com/design9pum/gpuops_jd307"
+Issues = "https://github.com/design9pum/gpuops_jd307/issues"
+
+[project.scripts]
+gpuops_jd307 = "gpuops_jd307:main"
+
+[tool.setuptools]
+py-modules = ["gpuops_jd307"]
